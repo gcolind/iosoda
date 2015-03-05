@@ -1,0 +1,12 @@
+// Super simple server - serve single static file
+
+var express = require('express');
+var app = express();
+var path = require('path');
+
+// localhost:8080
+app.get('*', function(req, res) {
+    res.sendFile(path.join(__dirname + 'public/index.html'));
+});
+
+app.listen(8080);
