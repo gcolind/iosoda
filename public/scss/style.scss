@@ -1,5 +1,12 @@
+$shit: brown;
+
 html,body{
   height:100%;
   width:100%;
   background:red;
+}
+
+.poop{
+  color:blue;
+  border:1px solid $shit;
 }
